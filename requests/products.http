@@ -1,0 +1,33 @@
+//ESTO ES EL CLIENTE, desde aca entran los datos al back (controllers)
+@api = http://localhost:4000/products
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name":"teclado",
+    "description": "gaming",
+    "quantity": 56
+}
+
+###
+GET {{api}}/2
+
+###
+DELETE {{api}}/5
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "name":"mouse",
+    "description":"gaming",
+    "quantity": 20
+}
